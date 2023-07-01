@@ -1,0 +1,158 @@
+@import url('https://fonts.googleapis.com/css2?family=Martel+Sans:wght@900&family=Oxygen:wght@700&family=Poppins:wght@100&display=swap');
+
+
+* {
+    padding: 0;
+    margin: 0;
+    font-family: 'Martel Sans', sans-serif;
+    font-family: 'Oxygen', sans-serif;
+    font-family: 'Poppins', sans-serif;
+}
+
+/* -----------login part start----------- */
+
+.login {
+    height: 23pc;
+    width: 24pc;
+    background-color: rgba(0, 0, 0, 0.4);
+    margin: 15pc auto;
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    padding: 20px;
+    border: 2px solid black;
+    color: aliceblue;
+    border-radius: 20px;
+    flex-wrap: wrap;
+}
+
+
+/* ----define size for smaller screen---------- */
+
+@media  screen and (max-width:768px) {
+    .login{
+        height: auto;
+        width: 50%;
+        margin:20% 20%;
+    }
+    
+}
+
+
+/* -------login component's------------ */
+
+.login h1 {
+    margin: 0 auto;
+    font-size: 40px;
+}
+
+.login label,
+.login input {
+    margin: 2px;
+    color: rgb(248, 236, 236);
+}
+
+.login input {
+    width: 95%;
+    height: 30px;
+    border: none;
+    border-bottom: 2px solid black;
+    background: transparent;
+    outline: none;
+}
+
+/* -----login end----------- */
+
+
+
+/* --------remember and forget part start------------ */
+
+.rem_forget {
+    width: 100%;
+    display: flex;
+    font-weight: 100;
+    justify-content: space-between;
+    align-items: center;
+    font-size: 22px;
+    flex-wrap: wrap;
+}
+
+.rem {
+    display: flex;
+    align-items: center;
+    color: rgb(202, 223, 241);
+}
+
+.rem input {
+    margin-right: 10px;
+}
+
+.rem_forget a {
+    color: rgb(202, 223, 241);
+    text-decoration: none;
+}
+
+.rem_forget a:hover {
+    color: rgb(221, 148, 52);
+}
+
+/* -----------remember and forget end---------- */
+
+
+
+
+/* -------button-------- */
+
+body button {
+    width: 100%;
+    height: 40px;
+    font-size: 19px;
+    font-weight: 600;
+    background-color: transparent;
+    outline: 1px;
+    border: 2px double black;
+    border-radius: 20px;
+    color: white;
+}
+
+body button:hover {
+    color: rgb(221, 148, 52);
+}
+
+/* -----button end------------ */
+
+/* ------animation part for main theme------- */
+.animated-bg {
+    width: 100%;
+    height: 100vh;
+    background-image: url('/pexels-photo-414171.jpeg');
+    position: absolute;
+    background-repeat: no-repeat;
+    top: 0;
+    left: 0;
+    animation: animateBg 20s linear infinite;
+}
+
+@keyframes animateBg {
+    0% {
+        background-position: 0 0;
+    }
+
+    25% {
+        background-position: 20% 0;
+    }
+
+    50% {
+        background-position: 50% 0;
+    }
+
+    75% {
+        background-position: 100% 0;
+    }
+
+    100% {
+        background-position: 0 0;
+    }
+}
+
+/* -------animation-end---------------- */
